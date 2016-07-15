@@ -22,6 +22,7 @@ public class CustomListActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_custom_list);
         listView = (ListView)findViewById(R.id.listView3);
+        listView.setChoiceMode(ListView.CHOICE_MODE_MULTIPLE);
         pictureView = (ImageView)findViewById(R.id.image_picture);
         pictureView.setOnClickListener(new View.OnClickListener() {
             @Override
